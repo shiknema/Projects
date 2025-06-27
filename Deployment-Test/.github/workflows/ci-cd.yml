@@ -1,0 +1,36 @@
+name: Build React & Node App
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clone repo
+      uses: actions/checkout@v3
+
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install & Build Client
+      working-directory: ./client
+      run: |
+        npm install
+        npm run build
+
+    - name: Install & Test Server
+      working-directory: ./server
+      run: |
+        npm install
+        npm start & sleep 5
+        curl http://localhost:5000/api
+
+    - name: Docker Compose Build
+      run: docker-compose build

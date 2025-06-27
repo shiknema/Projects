@@ -1,0 +1,61 @@
+{
+  "courses": [
+    { "id" : "1",
+      "name": "Cloud Computing",
+      "fee": "24500",
+      "img": "https://innovationatwork.ieee.org/wp-content/uploads/2019/09/bigstock-d-Rendering-Cloud-Computing-267217441_1024X684.jpg",
+      "details": "Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user.We are offering AWS, Microsoft Azure and Google Cloud Plateform(GCP)"
+    },
+    {
+      "id" : "2",
+      "name": "Devops",
+      "fee": "21200",
+      "img": "https://fortyseven47.com/wp-content/uploads/2021/04/devops.png",
+      "details": "DevOps is a set of practices that combines software development and information-technology operations which aims to shorten the systems development life cycle operations which aims to shorten the systems development life cycle."
+    },
+    {
+      "id" : "3",
+      "name": "FullStack",
+      "fee": "16000",
+      "img": "https://static.javatpoint.com/blog/images/how-to-be-a-full-stack-developer.png",
+      "details": "A full stack developer is an engineer who can handle all the work of databases, servers, systems engineering, and clients. Depending on the project, what customers need may be a mobile stack, a Web stack, or a native application stack"
+    },
+    {
+      "id" : "4",
+      "name": "Machine Learning",
+      "fee": "18000",
+      "img": "https://interactivechaos.com/sites/default/files/2018-12/machine_learning_800x400.jpg",
+      "details": "Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed."
+    },
+    {
+      "id" : "5",
+      "name": "Big Data",
+      "fee": "24800",
+      "img": "http://res.heraldm.com/content/image/2021/09/01/20210901000925_0.jpg",
+      "details": "Big data is a field that treats ways to analyze, systematically extract information from, or otherwise deal with data sets that are too large or complex to be dealt with, by traditional."
+    },
+    {
+      "id" : "6",
+      "name": "BI and Visualization",
+      "fee": "13000",
+      "img": "https://bigdataanalyticsnews.com/wp-content/uploads/2017/03/power-bi.jpg",
+      "details": "Data visualization is a general term that describes any effort to help people understand the significance of data by placing it in a visual context. Patterns, trends and correlations."
+    },
+    {
+      "id" : "7",
+      "name": "Data Science",
+      "fee": "31000",
+      "img": "https://www.dataquest.io/wp-content/uploads/2019/05/what-is-data-science-1.jpg",
+      "details": "Data science is a multi-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights. "
+    }
+  ],
+  "enquiries": [
+    {
+      "id": 922,
+      "name": "gt",
+      "phone": "4354",
+      "email": "erer",
+      "subject": "fesfrw"
+    }
+  ]
+}

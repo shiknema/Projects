@@ -1,0 +1,18 @@
+.heading{
+    text-align: center;
+    background-color: rgb(36, 177, 196);
+}
+.card-img-top:hover { 
+    transform: scale(1.05);
+ }
+
+.card-footer{
+    background-color: rgb(190, 225, 241);
+}
+.wholecard{
+margin-top: 40px;
+}
+
+.footer{
+    background-color: cadetblue;
+}
