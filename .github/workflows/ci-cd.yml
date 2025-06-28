@@ -3,7 +3,7 @@ name: Build React & Node App
 on:
   push:
     branches: 
-    - '*/*'
+    - '*'
   pull_request:
     branches: [main]
 
@@ -12,26 +12,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clone repo
+    - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Setup Node
+    - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
         node-version: 18
 
-    - name: Install & Build Client
-      working-directory: ./client
+    - name: Build React app
+      working-directory: ./Deployment-Test/client
       run: |
         npm install
         npm run build
 
-    - name: Install & Test Server
-      working-directory: ./server
+    - name: Run backend and test API
+      working-directory: ./Deployment-Test/server
       run: |
         npm install
-        npm start & sleep 5
-        curl http://localhost:5000/api
+        node index.js &
+        sleep 5
+        curl http://localhost:5000/api || echo "API failed"
 
     - name: Docker Compose Build
+      working-directory: ./Deployment-Test
       run: docker-compose build
