@@ -3,7 +3,7 @@ name: Build React & Node App
 on:
   push:
     branches: 
-    - '*'
+    - '*/*'
   pull_request:
     branches: [main]
 
