@@ -1,0 +1,1 @@
+gcloud functions deploy HelloWorld --region europe-west1 --entry-point helloWorld --runtime nodejs14 --trigger-http --allow-unauthenticated
